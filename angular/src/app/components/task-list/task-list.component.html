@@ -7,9 +7,13 @@
       <li *ngFor="let task of tasks">
         <task [task]="task"></task>
       </li>
+      <li class="add-task">
+        <input class="form-control form-control-sm" placeholder="Add new task and hit enter" (onEnter)="addTask()" [(ngModel)]="newTaskName" />
+      </li>
     </ul>
   </div>
   <div class="card-footer">
+    <button class="btn btn-outline-secondary btn-sm" (click)="logTasks()">Log Task Data</button>
     {{getCompleteTaskCount()}} of {{tasks.length}} Complete
   </div>
 </div>

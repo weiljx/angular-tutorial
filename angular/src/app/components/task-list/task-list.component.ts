@@ -11,6 +11,7 @@ export class TaskListComponent {
 
   listName: string = 'Task List';
   listDescription: string = 'This is a list of tasks.';
+  newTaskName: string = '';
   tasks: Array<Task> = [];
 
   constructor(private taskService: TaskService) {
@@ -19,5 +20,18 @@ export class TaskListComponent {
 
   getCompleteTaskCount(): number {
     return this.tasks.filter((task: Task) => task.completed).length;
+  }
+
+  addTask(): void {
+    this.taskService.addTask({
+      id: 0,
+      title: this.newTaskName,
+      completed: false
+    });
+    this.newTaskName = '';
+  }
+
+  logTasks(): void {
+    console.log('Tasks in Service', this.taskService.tasks);
   }
 }
