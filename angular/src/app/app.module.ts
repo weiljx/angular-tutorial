@@ -9,6 +9,7 @@ import { TaskComponent } from './components/task/task.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { OnEnterDirective } from './directives/on-enter.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CommonModule } from '@angular/common';
     DemoPageComponent,
     InfoPageComponent,
     TaskComponent,
-    TaskListComponent
+    TaskListComponent,
+    OnEnterDirective
   ],
   imports: [
     BrowserModule,
