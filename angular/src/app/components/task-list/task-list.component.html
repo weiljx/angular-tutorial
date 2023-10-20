@@ -1,0 +1,15 @@
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{listName}}</h5>
+    <p class="card-text">{{listDescription}}</p>
+    <ul class="task-list">
+      <li *ngFor="let task of tasks">
+        <task [task]="task"></task>
+      </li>
+    </ul>
+  </div>
+  <div class="card-footer">
+    {{getCompleteTaskCount()}} of {{tasks.length}} Complete
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.form-check
+{
+  &.completed {
+    label {
+      text-decoration: line-through;
+    }
+  }
+
+  &:hover {
+    .bi-pencil-fill {
+      display: inline-block;
+    }
+  }
+
+  .bi-pencil-fill {
+    float: right;
+    cursor: pointer;
+    display: none;
+  }
+}

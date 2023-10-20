@@ -1,0 +1,9 @@
+<div class="task">
+  <div class="form-check" [ngClass]="{'completed': task.completed }">
+    <input class="form-check-input" type="checkbox" id="taskCheckbox_{{task.id}}" [(ngModel)]="task.completed">
+    <label class="form-check-label" for="taskCheckbox_{{task.id}}">
+      {{task.title}}
+    </label>
+    <i class="bi-pencil-fill"></i>
+  </div>
+</div>

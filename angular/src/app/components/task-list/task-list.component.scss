@@ -1,0 +1,32 @@
+:host {
+  max-width: 500px;
+  display: inline-block;
+  width: 100%;
+
+  .card .card-body {
+    padding-bottom: 24px;
+  }
+
+  ul.task-list {
+    margin: 0;
+    padding: 0;
+    width: calc(100% + 32px); // account for padding
+    margin-left: -16px;
+
+    li {
+      list-style: none;
+      border-bottom: 1px solid #cccccc;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      &:hover {
+        background: #80d7ebaa;
+      }
+    }
+  }
+
+  .card-footer {
+    background-color: #fff;
+    text-align: right;
+  }
+}
