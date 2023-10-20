@@ -12,4 +12,12 @@ export class TaskComponent {
 
   editMode: boolean = false;
 
+  editTask() {
+    this.editMode = true;
+  }
+
+  saveTask() {
+    this.editMode = false;
+  }
+
 }

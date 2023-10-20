@@ -18,3 +18,16 @@
     display: none;
   }
 }
+
+.form-group {
+  .form-check-input {
+    margin-top: 13px;
+  }
+  .form-control {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: calc(100% - 22px);
+    display: inline-block;
+    margin-left: 6px;
+  }
+}
